@@ -7,5 +7,7 @@ AtCoderで学ぶアルゴリズム・Python
 - python version 3.8 
 
 ## 問題一覧
-- [PracticeA]Welcome to AtCoder  
-- [ABC086A]Product  
+- [PracticeA] Welcome to AtCoder  
+- [ABC086A] Product 
+- [ABC081A] Placing Marbles  
+- [ABC081B] Shift only   
