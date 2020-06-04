@@ -12,3 +12,4 @@ AtCoderで学ぶアルゴリズム・Python
 - [ABC081A] Placing Marbles  
 - [ABC081B] Shift only   
 - [ABC087B] Coins  
+- [ABC083B] Some Sums  
