@@ -11,3 +11,4 @@ AtCoderで学ぶアルゴリズム・Python
 - [ABC086A] Product 
 - [ABC081A] Placing Marbles  
 - [ABC081B] Shift only   
+- [ABC087B] Coins  
