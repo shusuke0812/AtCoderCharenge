@@ -22,4 +22,15 @@ dn
 作ることのできる鏡餅の最大の段数
 """
 
+n = int(input())
+d = []
 
+for i in range(n):
+    # print(i)
+    d.append(int(input()))
+
+d = list(set(d))
+d = sorted(d)
+# print(d)
+
+print(len(d))
