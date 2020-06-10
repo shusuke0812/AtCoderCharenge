@@ -22,6 +22,11 @@ y = list(map(int, input().split()))
 n = y[0]
 money_sum = y[1]
 
+# TODO：全探索することがNG？
+
+# 組み合わせがないときのflag
+error_flag = 0
+
 # x = 10000円の枚数, y = 5000円の枚数、z = 1000円の枚数
 # x + y + z = n となる組み合わせを [x, y, z] を考える
 money_num = []
@@ -29,19 +34,30 @@ for i in range(n+1):
     for j in range(n+1-i):
         money_num.append([n-j-i, j, i])
 
-# 組み合わせがないときのflag
-error_flag = 0
+        sum = (n-j-i) * 10000 + j * 5000 + i * 1000
+
+        if sum == money_sum:
+            error_flag = 1
+            x = n-j-i
+            y = j
+            z = i
+            break
+
+        sum = 0
 
 # 作った紙幣の組み合わせに関して金額を計算
+"""
 for i in money_num:
     sum = 10000 * i[0] + 5000 * i[1] + 1000 * i[2]
     if sum == money_sum:
         error_flag = 1
         ans = i
         break
+"""
 
 if error_flag == 1:
-    print(ans[0], ans[1], ans[2])
+    print(x, y, z)
+    # print(ans[0], ans[1], ans[2])
 else:
     print('-1 -1 -1')
 
