@@ -23,6 +23,7 @@ n = y[0]
 money_sum = y[1]
 
 # TODO：全探索することがNG？
+#       下記コードの場合、答えがmoney_numの後ろの要素にある場合は時間がかかることがある
 
 # 組み合わせがないときのflag
 error_flag = 0
@@ -42,8 +43,9 @@ for i in range(n+1):
             y = j
             z = i
             break
-
-        sum = 0
+    else:
+        continue
+    break
 
 # 作った紙幣の組み合わせに関して金額を計算
 """
