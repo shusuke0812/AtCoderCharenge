@@ -15,5 +15,5 @@ AtCoderで学ぶアルゴリズム・Python
 - [ABC083B] Some Sums  
 - [ABC088B] Card Game for Two  
 - [ABC085B] Kagami Mochi  
-- [ABC085C] Otoshidama  
+- [ABC085C] Otoshidama ->メモリ使用制限、実行速度制限に苦戦した  
 - [ABC049C] 白昼夢  
