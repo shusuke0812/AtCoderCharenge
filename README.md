@@ -16,3 +16,4 @@ AtCoderで学ぶアルゴリズム・Python
 - [ABC088B] Card Game for Two  
 - [ABC085B] Kagami Mochi  
 - [ABC085C] Otoshidama  
+- [ABC049C] 白昼夢  
