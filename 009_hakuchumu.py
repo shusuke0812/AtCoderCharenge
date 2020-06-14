@@ -39,7 +39,7 @@ er = 5 # eraser の文字数
 
 while True:
     if s[0] == 'm':
-        if s[4] == 'd' or s[4] == 'e':
+        if s[4] == 'd':
             flag = 'YES'
             del s[0:de+1]
         else:
@@ -67,8 +67,9 @@ while True:
 
     # print('s: ', s)
     # print('flag: ', flag)
-
-    if len(s) <= 0:
+    
+    # print('s_len', s)
+    if len(s) < de:
         break
 
 print(flag)
