@@ -22,6 +22,7 @@ s=tとすることができる場合、'YES'
 s = list(input())
 # s = list('erasedream')
 s.reverse()
+s = ''.join(s)
 
 s_len = len(s)
 
@@ -37,6 +38,31 @@ de = 4 # dream or erase の文字数
 dr = 6 # dreamer の文字数
 er = 5 # eraser の文字数
 
+while True:
+    if s[:de+1] == "maerd":
+        s = s[de+1:]
+        flag = 'YES'
+    elif s[:dr+1] == 'remaerd':
+        s = s[dr+1:]
+        flag = 'YES'
+    elif s[:de+1] == 'esare':
+        s = s[de+1:]
+        flag = 'YES'
+    elif s[:er+1] == 'resare':
+        s = s[er+1:]
+        flag = 'YES'
+    else:
+        flag = 'NO'
+        break
+
+    if len(s) <= de:
+        break
+
+print(flag)
+
+
+# この案だと実行時エラーになる（単語単位でないといけない）
+"""
 while True:
     if s[0] == 'm':
         if s[4] == 'd':
@@ -65,6 +91,10 @@ while True:
             flag = 'NO'
             break
 
+    else:
+        flag = 'NO'
+        break
+
     # print('s: ', s)
     # print('flag: ', flag)
     
@@ -73,6 +103,6 @@ while True:
         break
 
 print(flag)
-
+"""
         
 
