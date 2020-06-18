@@ -17,6 +17,8 @@ y円となる各お札の組み合わせの一例の中からお札の枚数を�
 ただし、組み合わせがない場合は'-1 -1 -1'と出力する。
 """
 
+import gc
+
 y = list(map(int, input().split()))
 
 n = y[0]
@@ -43,6 +45,7 @@ for i in range(n+1):
         else:
             # 不要なリスト内のデータはメモリの使用を抑えるため即削除
             money_num.pop(0)
+            # gc.collect()
     else:
         continue
     break
