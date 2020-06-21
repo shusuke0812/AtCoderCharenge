@@ -27,4 +27,14 @@ tn xn yn
 入力のプランが実行可能なら'Yes', 不可能なら'No'
 """
 
+n = int(input())
+t = []
+xy = []
+for i in range(1,n+1):
+    t_temp, x_temp, y_temp = list(map(int, input().split()))
+    t.append(t_temp)
+    xy.append([x_temp, y_temp])
 
+print(t)
+print(xy)
+# print(y)
