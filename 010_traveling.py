@@ -35,8 +35,8 @@ for i in range(1,n+1):
     t.append(t_temp)
     xy.append([x_temp, y_temp])
 
-print(t)
-print(xy)
+# print(t)
+# print(xy)
 
 k = 0
 flag = 'No'
@@ -45,6 +45,7 @@ guki = ''
 for j in xy:
     # 座標までの距離を計算
     distance = j[0] + j[1]
+    # print(distance)
 
     # 移動距離と座標までの距離の偶奇判定
     if t[k] % 2 == 0 and distance % 2 == 0:
@@ -53,6 +54,7 @@ for j in xy:
         guki = 'Odd'
     else:
         guki = ''
+    # print(guki)
 
     if t[k] < distance:
         flag = 'No'
@@ -60,11 +62,15 @@ for j in xy:
     elif t[k] == distance:
         flag = 'Yes'
     elif t[k] > distance:
-        if not guki == '':
-            flag = 'Yes'
-        else:
+        if guki == '':
             flag = 'No'
-
+            break
+        else:
+            flag = 'Yes'
+    
+    # print(flag)
+    k += 1
+    guki = ''
 
 print(flag)
 
