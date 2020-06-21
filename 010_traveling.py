@@ -28,8 +28,8 @@ tn xn yn
 """
 
 n = int(input())
-t = []
-xy = []
+t = []  # 移動距離
+xy = [] # 座標
 for i in range(1,n+1):
     t_temp, x_temp, y_temp = list(map(int, input().split()))
     t.append(t_temp)
@@ -37,4 +37,34 @@ for i in range(1,n+1):
 
 print(t)
 print(xy)
-# print(y)
+
+k = 0
+flag = 'No'
+guki = ''
+
+for j in xy:
+    # 座標までの距離を計算
+    distance = j[0] + j[1]
+
+    # 移動距離と座標までの距離の偶奇判定
+    if t[k] % 2 == 0 and distance % 2 == 0:
+        guki = 'Even'
+    elif t[k] % 2 != 0 and distance % 2 != 0:
+        guki = 'Odd'
+    else:
+        guki = ''
+
+    if t[k] < distance:
+        flag = 'No'
+        break
+    elif t[k] == distance:
+        flag = 'Yes'
+    elif t[k] > distance:
+        if not guki == '':
+            flag = 'Yes'
+        else:
+            flag = 'No'
+
+
+print(flag)
+
