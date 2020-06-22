@@ -43,6 +43,11 @@ flag = 'No'
 guki = ''
 
 for j in xy:
+    """
+    TODO:これだと(0, 0)から計算していることになる
+         移動したら各座標から移動距離を出すように変更する
+         dt, dxy
+    """
     # 座標までの距離を計算
     distance = j[0] + j[1]
     # print(distance)
@@ -71,6 +76,7 @@ for j in xy:
     # print(flag)
     k += 1
     guki = ''
+    distance = 0
 
 print(flag)
 
