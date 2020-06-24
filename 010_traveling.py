@@ -41,6 +41,8 @@ for i in range(1,n+1):
 k = 0
 flag = 'No'
 guki = ''
+distance = 0
+dt = 0
 
 for j in xy:
     """
@@ -49,24 +51,24 @@ for j in xy:
          dt, dxy
     """
     # 座標までの距離を計算
-    distance = j[0] + j[1]
-    # print(distance)
+    distance = abs(j[0] + j[1] - distance)
+    dt = abs(t[k] - dt)
 
     # 移動距離と座標までの距離の偶奇判定
-    if t[k] % 2 == 0 and distance % 2 == 0:
+    if dt % 2 == 0 and distance % 2 == 0:
         guki = 'Even'
-    elif t[k] % 2 != 0 and distance % 2 != 0:
+    elif dt % 2 != 0 and distance % 2 != 0:
         guki = 'Odd'
     else:
         guki = ''
     # print(guki)
 
-    if t[k] < distance:
+    if dt < distance:
         flag = 'No'
         break
-    elif t[k] == distance:
+    elif dt == distance:
         flag = 'Yes'
-    elif t[k] > distance:
+    elif dt > distance:
         if guki == '':
             flag = 'No'
             break
@@ -76,7 +78,6 @@ for j in xy:
     # print(flag)
     k += 1
     guki = ''
-    distance = 0
 
 print(flag)
 
