@@ -20,4 +20,5 @@ AtCoderで学ぶアルゴリズム・Python
 - [ABC049C] 白昼夢 
 - [ABC086C] Traveling -> アルゴリズムを考えるのに苦戦した     
   
-#### AtCoder 過去問  
+#### AtCoder 過去問 
+- [ABC050A] Haiku   

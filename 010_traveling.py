@@ -45,11 +45,6 @@ distance = 0
 dt = 0
 
 for j in xy:
-    """
-    TODO:これだと(0, 0)から計算していることになる
-         移動したら各座標から移動距離を出すように変更する
-         dt, dxy
-    """
     # 座標までの距離を計算
     distance = abs(j[0] + j[1] - distance)
     dt = abs(t[k] - dt)
