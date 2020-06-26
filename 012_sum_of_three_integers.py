@@ -1,6 +1,6 @@
 """
 2つの整数k,sがあります。
-3つの変数x,y,zがあり、0 <= z,y,z <= k を満たす整数値をとります。
+3つの変数x,y,zがあり、0 <= x,y,z <= k を満たす整数値をとります。
 x + y + z = s を満たすx,y,zへの値の割り当ては何通りありますか。
 
 制約
@@ -27,11 +27,20 @@ x = 0
 y = 0
 z = 0
 
+# これだとステップ数 n^3 回実行 -> O(n^3)
+"""
 for x in range(k+1):
     for y in range(k+1):
         for z in range(k+1):
             if x + y + z == s:
                 count += 1
+"""
+# O(n^2)に変更
+for x in range(k+1):
+    for y in range(k+1):
+        z = s - x - y
+        if z >= 0 and z <= k:
+            count += 1
 
 print(count)
 
