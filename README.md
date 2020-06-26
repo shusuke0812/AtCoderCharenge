@@ -21,5 +21,6 @@ AtCoderで学ぶアルゴリズム・Python
 - [ABC086C] Traveling -> アルゴリズムを考えるのに苦戦した     
   
 #### AtCoder 過去問 
-- [ABC050A] Haiku  
-- [ABC051B] Sum of Three Integers   
+- [ABC051A] Haiku  
+- [ABC051B] Sum of Three Integers  
+- [ABC051C] Back and Forth     
