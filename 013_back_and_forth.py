@@ -22,3 +22,18 @@ sx sy tx ty
 ・'L'：左方向
 ・'R'：右方向
 """
+
+coordinates = list(map(int,input().split()))
+s = []
+t = []
+
+for i in range(len(coordinates)):
+    if i < 2:
+        s.append(coordinates[i])
+    else:
+        t.append(coordinates[i])
+
+# print(s)
+# print(t)
+
+
