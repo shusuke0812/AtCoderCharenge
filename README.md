@@ -24,4 +24,5 @@ AtCoderで学ぶアルゴリズム・Python
 - [ABC051A] Haiku  
 - [ABC051B] Sum of Three Integers  
 - [ABC051C] Back and Forth     
-- [ABC052A] Two Rectangles  
+- [ABC052A] Two Rectangles 
+- [ABC052B] Increment Decrement   
