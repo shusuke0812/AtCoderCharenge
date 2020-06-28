@@ -25,4 +25,5 @@ AtCoderで学ぶアルゴリズム・Python
 - [ABC051B] Sum of Three Integers  
 - [ABC051C] Back and Forth     
 - [ABC052A] Two Rectangles 
-- [ABC052B] Increment Decrement   
+- [ABC052B] Increment Decrement  
+- [ABC052C] Factors of Factorial   
