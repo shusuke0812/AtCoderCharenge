@@ -16,4 +16,6 @@ A B C D
 大きい方の長方形の面積。等しい場合はその面積。
 """
 
+a,b,c,d = map(int, input().split())
 
+# print(a,b,c,d)
