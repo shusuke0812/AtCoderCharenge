@@ -18,4 +18,15 @@ s
 操作の途中での整数xがとる値の最大値を出力する
 """
 
+n = int(input())
+s = input()
+
+x = 0
+x_max = 0
+s_list = []
+
+for i in s:
+    s_list.append(i)
+
+# print(s_list)
 
