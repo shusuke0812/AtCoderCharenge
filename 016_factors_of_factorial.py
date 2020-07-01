@@ -16,19 +16,22 @@ n = int(input())
 
 factorial = 1
 divisor = []
+count = 0
 ans = 0
 
 for i in range(1,n+1):
     factorial = factorial * i
 
-# print(factorial)
+print(factorial)
 
 for i in range(1,factorial+1):
     if factorial % i == 0:
-        divisor.append(i)
+        # divisor.append(i)
+        count += 1
 
 # print(divisor)
 
-ans = len(divisor) % (10 ** 9 + 7)
+# ans = len(divisor) % (10 ** 9 + 7)
+ans = count % (10 ** 9 + 7)
 
 print(ans)
