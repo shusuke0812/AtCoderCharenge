@@ -19,7 +19,7 @@ n = int(input())
 
 factorial = 1
 divisor = []
-ans = 0
+ans = 1
 
 # この方法だと n が大きいときにfactorialが膨大になる
 # pythonのint型のサイズはメモリの許す限り大きな値をとることは可能だがループの処理がかかる
@@ -49,16 +49,18 @@ def get_prime(num):
 # 方針：入力値を素因数分解し、各素因数の個数を求める
 
 # n-iの素因数を求める
-for j in range(1, n):
+for j in range(2, n+1):
     get_prime(j)
 
-print(divisor)
+# print(divisor)
 
+# 各素因数の組み合わせ数を求める
 count = collections.Counter(divisor)
 
-print(count)
+for k in count.most_common():
+    temp = list(k)[1]
+    ans = ans * (temp + 1)
 
-# ans = len(divisor) % (10 ** 9 + 7)
-# ans = count % (10 ** 9 + 7)
+ans = ans % (10 ** 9 + 7)
 
-# print(ans)
+print(ans)
