@@ -29,4 +29,5 @@ AtCoderで学ぶアルゴリズム・Python
 - [ABC052C] Factors of Factorial -> 素因数分解、約数の個数算出方法を勉強した  
 - [ABC053A] ABC/ARC 
 - [ABC053B] A to Z String  
-- [ABC053C] C-X: Yet Another Die Game   
+- [ABC053C] X: Yet Another Die Game  
+- [ABC054A] One Card Poker   
