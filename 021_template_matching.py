@@ -31,3 +31,12 @@ Bm
 画像Aの中にテンプレート画像Bを含む場合は'Yes'、含まない場合は'No'を出力せよ
 """
 
+n,m = map(int, input().split())
+a = []
+b = []
+
+for i in range(n):
+    a.append(input())
+for j in range(m):
+    b.append(input())
+
