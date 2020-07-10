@@ -10,7 +10,7 @@
 画像の平行移動のみ許されるとき、テンプレート画像Bが画像Aに含まれているか判定する。
 
 制約
-・1 <= M <> N <= 50
+・1 <= M <= N <= 50
 ・Aiは'#'と'.'からなる長さNの文字列
 ・Biは'#'と'.'からなる長さMの文字列
 
@@ -39,4 +39,19 @@ for i in range(n):
     a.append(input())
 for j in range(m):
     b.append(input())
+
+# 考え：同じ文字列の並びがあるか各行、各列で見る
+# 方針：画像の左上から各行ごとに先頭からAとBの文字列を比較していきマッチするかどうかを調べる
+
+a_pix = []
+b_pix = []
+
+for i in a:
+    for i_pix in i:
+        a_pix.append(i_pix)
+
+for j in b:
+    for j_pix in j:
+        b_pix.append(j_pix)
+
 
