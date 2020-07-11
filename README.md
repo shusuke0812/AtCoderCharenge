@@ -31,4 +31,4 @@ AtCoderで学ぶアルゴリズム・Python
 - [ABC053B] A to Z String  
 - [ABC053C] X: Yet Another Die Game  
 - [ABC054A] One Card Poker  
-- [ABC054B] Template Matching   
+- [ABC054B] Template Matching -> 2つの2次元配列の要素を順番に比較して同じかどうか調べる方法に苦戦した  
