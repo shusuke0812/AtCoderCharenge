@@ -45,13 +45,20 @@ for j in range(m):
 
 a_pix = []
 b_pix = []
+a_temp = []
+b_temp = []
 
 for i in a:
     for i_pix in i:
-        a_pix.append(i_pix)
+        a_temp.append(i_pix)
+    a_pix.append(a_temp)
+    a_temp = []
 
 for j in b:
     for j_pix in j:
-        b_pix.append(j_pix)
+        b_temp.append(j_pix)
+    b_pix.append(b_temp)
+    b_temp = []
 
-
+print(a_pix)
+print(b_pix)
