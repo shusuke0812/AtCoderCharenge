@@ -32,3 +32,4 @@ AtCoderで学ぶアルゴリズム・Python
 - [ABC053C] X: Yet Another Die Game  
 - [ABC054A] One Card Poker  
 - [ABC054B] Template Matching -> 2つの2次元配列の要素を順番に比較して同じかどうか調べる方法に苦戦した  
+- [ABC054C] One-stroke Path  
