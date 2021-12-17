@@ -19,12 +19,14 @@ AtCoDeer君が動く距離の最小値を出力しなさい
 N = map(int, input())
 a = list(map(int, input().split()))
 
-a_uniques = list(set(a))
-a_uniques.sort()
+#a_uniques = list(set(a))
+#a_uniques.sort()
 
-distance = 0
+#distance = 0
 
-for i in range(len(a_uniques) - 1):
-    distance = distance + a_uniques[i+1] - a_uniques[i]
+#for i in range(len(a_uniques) - 1):
+#    distance = distance + a_uniques[i+1] - a_uniques[i]
+
+distance = max(a) - min(a)
 
 print(distance)
